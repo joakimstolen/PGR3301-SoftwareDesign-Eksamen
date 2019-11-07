@@ -28,11 +28,11 @@ namespace SoftDesEksamen {
 			return _colour;
 			}
 
-		public virtual int horsePower()
-			{
-			return _horsePower;
-			}
-
+		public int getHorsePower()
+		{
+			throw new NotImplementedException();
+		}
+		
 		public virtual int getSeats()
 			{
 			return _seats;

@@ -1,3 +1,6 @@
 /Users/jon/Projects/SoftDesEksamen/SoftDesEksamen/obj/Debug/netcoreapp3.0/SoftDesEksamen.csprojAssemblyReference.cache
 /Users/jon/Projects/SoftDesEksamen/SoftDesEksamen/obj/Debug/netcoreapp3.0/SoftDesEksamen.AssemblyInfoInputs.cache
 /Users/jon/Projects/SoftDesEksamen/SoftDesEksamen/obj/Debug/netcoreapp3.0/SoftDesEksamen.AssemblyInfo.cs
+/Users/jon/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/obj/Debug/netcoreapp3.0/SoftDesEksamen.csprojAssemblyReference.cache
+/Users/jon/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/obj/Debug/netcoreapp3.0/SoftDesEksamen.AssemblyInfoInputs.cache
+/Users/jon/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/obj/Debug/netcoreapp3.0/SoftDesEksamen.AssemblyInfo.cs
