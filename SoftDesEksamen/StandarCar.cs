@@ -7,6 +7,8 @@ namespace SoftDesEksamen {
 		private readonly int _horsePower;
 		private readonly int _seats;
 
+		
+		//constructor We have to choose what we will use in the random in car, evry parameter have to be called on there
 		public StandarCar(int price, string colour, int horsePower, int seats)
 			{
 			price = _price;

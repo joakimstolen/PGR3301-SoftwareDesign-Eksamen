@@ -6,7 +6,17 @@ namespace SoftDesEksamen {
 			{
 
 			Random random = new Random();
-			ICar car = new StandarCar(random.Next());
+			ICar car = new StandarCar(random.Next(250_000,579_890));
+			
+			if (random.Next(2) == 1) {
+				car = new SuvCar(car);
+			} else if (random.Next(2) == 1) {
+				car = new TruckCar(car);
+			} else if (random.Next(2) == 1) {
+				car = new SportsCar(car);
+			}
+
+			return car;
 
 			}
 

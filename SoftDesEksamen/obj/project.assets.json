@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jon/Projects/SoftDesEksamen/SoftDesEksamen/SoftDesEksamen.csproj",
+      "projectUniqueName": "/Users/jon/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/SoftDesEksamen.csproj",
       "projectName": "SoftDesEksamen",
-      "projectPath": "/Users/jon/Projects/SoftDesEksamen/SoftDesEksamen/SoftDesEksamen.csproj",
+      "projectPath": "/Users/jon/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/SoftDesEksamen.csproj",
       "packagesPath": "/Users/jon/.nuget/packages/",
-      "outputPath": "/Users/jon/Projects/SoftDesEksamen/SoftDesEksamen/obj/",
+      "outputPath": "/Users/jon/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -54,13 +54,7 @@
           "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true,
-        "frameworkReferences": {
-          "Microsoft.NETCore.App": {
-            "privateAssets": "all"
-          }
-        },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        "warn": true
       }
     }
   }
