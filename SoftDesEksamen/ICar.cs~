@@ -1,0 +1,16 @@
+﻿using System;
+namespace SoftDesEksamen {
+	public interface ICar {
+
+		private int _seats;
+		pr
+
+		double getPrice();
+		string getType();
+		int horsePower();
+
+
+
+
+		}
+	}
