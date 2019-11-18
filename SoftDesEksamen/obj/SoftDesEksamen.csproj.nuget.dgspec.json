@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jon/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/SoftDesEksamen.csproj": {}
+    "/Users/joakimstolen/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/SoftDesEksamen.csproj": {}
   },
   "projects": {
-    "/Users/jon/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/SoftDesEksamen.csproj": {
+    "/Users/joakimstolen/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/SoftDesEksamen.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jon/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/SoftDesEksamen.csproj",
+        "projectUniqueName": "/Users/joakimstolen/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/SoftDesEksamen.csproj",
         "projectName": "SoftDesEksamen",
-        "projectPath": "/Users/jon/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/SoftDesEksamen.csproj",
-        "packagesPath": "/Users/jon/.nuget/packages/",
-        "outputPath": "/Users/jon/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/obj/",
+        "projectPath": "/Users/joakimstolen/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/SoftDesEksamen.csproj",
+        "packagesPath": "/Users/joakimstolen/.nuget/packages/",
+        "outputPath": "/Users/joakimstolen/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/jon/.config/NuGet/NuGet.Config"
+          "/Users/joakimstolen/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"

@@ -4,3 +4,14 @@
 /Users/jon/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/obj/Debug/netcoreapp3.0/SoftDesEksamen.csprojAssemblyReference.cache
 /Users/jon/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/obj/Debug/netcoreapp3.0/SoftDesEksamen.AssemblyInfoInputs.cache
 /Users/jon/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/obj/Debug/netcoreapp3.0/SoftDesEksamen.AssemblyInfo.cs
+/Users/joakimstolen/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/bin/Debug/netcoreapp3.0/SoftDesEksamen
+/Users/joakimstolen/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/bin/Debug/netcoreapp3.0/SoftDesEksamen.deps.json
+/Users/joakimstolen/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/bin/Debug/netcoreapp3.0/SoftDesEksamen.runtimeconfig.json
+/Users/joakimstolen/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/bin/Debug/netcoreapp3.0/SoftDesEksamen.runtimeconfig.dev.json
+/Users/joakimstolen/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/bin/Debug/netcoreapp3.0/SoftDesEksamen.dll
+/Users/joakimstolen/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/bin/Debug/netcoreapp3.0/SoftDesEksamen.pdb
+/Users/joakimstolen/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/obj/Debug/netcoreapp3.0/SoftDesEksamen.csprojAssemblyReference.cache
+/Users/joakimstolen/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/obj/Debug/netcoreapp3.0/SoftDesEksamen.AssemblyInfoInputs.cache
+/Users/joakimstolen/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/obj/Debug/netcoreapp3.0/SoftDesEksamen.AssemblyInfo.cs
+/Users/joakimstolen/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/obj/Debug/netcoreapp3.0/SoftDesEksamen.dll
+/Users/joakimstolen/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/obj/Debug/netcoreapp3.0/SoftDesEksamen.pdb

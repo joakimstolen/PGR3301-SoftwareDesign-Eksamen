@@ -1,6 +1,6 @@
 ﻿using System;
 namespace SoftDesEksamen {
-	public class SalesMan : IPerson {
+	public class SalesMan {
 
 		private readonly string _firstName;
 		private readonly string _lastName;

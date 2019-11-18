@@ -1,28 +1,26 @@
 ﻿using System;
-namespace SoftDesEksamen {
-	public class Customer : IPerson {
 
-		private readonly string _firstName;
-		private readonly string _lastName;
+namespace SoftDesEksamen
+{
+	public class Customer : ThreadProxy
+	{
+		private CarShop _carShop;
+		private string _name;
 
+		public Customer(string name, CarShop carShop)
+		{
+			_name = name;
+			_carShop = carShop;
+		}
 
-		public Customer(string firstName, string lastName)
+		protected override void Task()
+		{
+			while (!_carShop.hasCar && _running) ;
+			ICar bought = _carShop.BuyCar();
+			if (bought != null)
 			{
-			firstName = _firstName;
-			lastName = _lastName;
+				Console.WriteLine("{0} bought a {1}", _name, bought.getPrice());
 			}
-
-
-		public virtual string getFirstName()
-			{
-			return _firstName;
-			}
-		public virtual string getLastName()
-			{
-			return _lastName;
-			}
-
-
-
 		}
 	}
+}
