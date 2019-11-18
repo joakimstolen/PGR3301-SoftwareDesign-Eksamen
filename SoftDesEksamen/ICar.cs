@@ -7,6 +7,7 @@ namespace SoftDesEksamen {
 		string getColour();
 		int getHorsePower();
 		int getSeats();
+		string getType();
 
 
 

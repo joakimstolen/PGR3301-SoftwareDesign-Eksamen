@@ -14,7 +14,7 @@ namespace SoftDesEksamen {
 			}
 		public override string getColour()
 			{
-			return base.getColour() + " Yellow";
+			return "Yellow";
 			}
 
 		public override int getSeats()
@@ -27,6 +27,9 @@ namespace SoftDesEksamen {
 			return base.getHorsePower() + 240;
 			}
 
-
+		public override string getType()
+		{
+			return "Truck";
 		}
+	}
 	}

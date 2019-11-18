@@ -12,9 +12,10 @@ namespace SoftDesEksamen {
 			{
 			return base.getPrice() + 2_500_000;
 			}
+		
 		public override string getColour()
 			{
-			return base.getColour() + " Red";
+			return "Red";
 			}
 
 		public override int getSeats()
@@ -27,6 +28,9 @@ namespace SoftDesEksamen {
 			return base.getHorsePower() + 450;
 			}
 
-
+		public override string getType()
+		{
+			return "Sports car";
 		}
+	}
 	}

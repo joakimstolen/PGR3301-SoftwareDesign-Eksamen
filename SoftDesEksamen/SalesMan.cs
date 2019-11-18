@@ -1,24 +1,25 @@
 ﻿using System;
 namespace SoftDesEksamen {
-	public class SalesMan {
+	public class SalesMan : ThreadProxy
+	{
+		private CarShop _carShop;
+		private string _name;
 
-		private readonly string _firstName;
-		private readonly string _lastName;
-
-		public SalesMan(string firstName, string lastName)
-			{
-			firstName = _firstName;
-			lastName = _lastName;
-			}
-		public string getFirstName()
-			{
-			return _firstName;
-			}
-		public string getLastName()
-			{
-			return _lastName;
-			}
-
-
+		public SalesMan(string name, CarShop carShop)
+		{
+			_name = name;
+			_carShop = carShop;
 		}
+
+
+		protected override void Task()
+		{
+			while (!_carShop.hasCar && _running);
+			ICar published = _carShop.PublishCar();
+			if (published != null)
+			{
+				Console.WriteLine("{0} published a {1} for sale", _name, published.getType());
+			}
+		}
+	}
 	}

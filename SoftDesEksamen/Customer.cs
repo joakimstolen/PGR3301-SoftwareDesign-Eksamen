@@ -19,7 +19,7 @@ namespace SoftDesEksamen
 			ICar bought = _carShop.BuyCar();
 			if (bought != null)
 			{
-				Console.WriteLine("{0} bought a {1}", _name, bought.getPrice());
+				Console.WriteLine("\t\t\t\t\t\t\t\t\t\t {0} bought a {1} that has {2} seats, with color {3} and price {4}", _name, bought.getType(), bought.getSeats(), bought.getColour(), bought.getPrice());
 			}
 		}
 	}

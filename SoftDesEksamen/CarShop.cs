@@ -51,5 +51,22 @@ namespace SoftDesEksamen {
 				_cars.Add(CarFactory.CreateRandomCar());
 			}
 		}
+
+		public ICar PublishCar()
+		{
+			lock (_lock)
+			{
+				if (_cars.Count > 0)
+				{
+					ICar carsToSell = _cars[0];
+					_cars.RemoveAt(0);
+					return carsToSell;
+				}
+				else
+				{
+					return null;
+				}
+			}
+		}
 	}
 	}

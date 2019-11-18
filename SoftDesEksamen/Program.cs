@@ -8,6 +8,8 @@ namespace SoftDesEksamen {
 		static void Main(string[] args)
 			{
 				CarShop shop = new CarShop();
+
+
 				List<Customer> customers = new List<Customer>()
 				{
 					new Customer("Jon", shop),
@@ -16,11 +18,37 @@ namespace SoftDesEksamen {
 					new Customer("Kris", shop)
 				};
 				
+				List<SalesMan> salesmen = new List<SalesMan>()
+				{
+					new SalesMan("Tommy", shop),
+					new SalesMan("Fredrik", shop),
+					new SalesMan("Anders", shop),
+					new SalesMan("Rob", shop)
+				};
+
+				
+				Console.WriteLine("CarShop is now open, Welcome!");
+				
 				shop.Start();
+
+				foreach (var salesman in salesmen)
+				{
+					salesman.Start();
+				}
+				
 				foreach (var customer in customers)
 				{
 					customer.Start();
 				}
+				
+				Thread.Sleep(3000);
+				
+				foreach (var salesman in salesmen)
+				{
+					salesman.Stop();
+				}
+				
+				
 				
 				Thread.Sleep(3000);
 
@@ -30,6 +58,7 @@ namespace SoftDesEksamen {
 				}
 				
 				shop.Stop();
+				
 				
 				Console.WriteLine("\n\n Press any key to Exit");
 				Console.ReadKey();

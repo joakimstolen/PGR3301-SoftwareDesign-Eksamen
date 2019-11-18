@@ -2,19 +2,21 @@
 namespace SoftDesEksamen {
 	public class StandarCar : ICar{
 
-		private readonly int _price;
-		private readonly string _colour;
-		private readonly int _horsePower;
-		private readonly int _seats;
+		private readonly int _price = 500_000;
+		private readonly string _colour = "Black";
+		private readonly int _horsePower = 500;
+		private readonly int _seats = 5;
+		private readonly string _type = "Car";
 
 		
 		//constructor We have to choose what we will use in the random in car, evry parameter have to be called on there
-		public StandarCar(int price, string colour, int horsePower, int seats)
+		public StandarCar(int price, string colour, int horsePower, int seats, string type)
 			{
 			price = _price;
 			colour = _colour;
 			horsePower = _horsePower;
 			seats = _seats;
+			type = _type;
 			}
 
 
@@ -30,7 +32,7 @@ namespace SoftDesEksamen {
 
 		public int getHorsePower()
 		{
-			throw new NotImplementedException();
+			return _horsePower;
 		}
 		
 		public virtual int getSeats()
@@ -38,10 +40,9 @@ namespace SoftDesEksamen {
 			return _seats;
 			}
 
-
-
-
-
-
+		public string getType()
+		{
+			return _type;
 		}
+	}
 	}

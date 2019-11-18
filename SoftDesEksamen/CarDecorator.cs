@@ -29,6 +29,9 @@ namespace SoftDesEksamen {
 			return _originalCar.getSeats();
 			}
 
-
+		public virtual string getType()
+		{
+			return _originalCar.getType();
 		}
+	}
 	}
