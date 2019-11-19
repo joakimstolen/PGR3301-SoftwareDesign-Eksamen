@@ -1,5 +1,4 @@
-﻿using System;
-namespace SoftDesEksamen {
+﻿namespace SoftDesEksamen {
 	public class CarDecorator : ICar{
 
 		private readonly ICar _originalCar;

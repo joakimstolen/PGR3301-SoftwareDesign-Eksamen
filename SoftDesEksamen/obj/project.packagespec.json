@@ -1,18 +1,19 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/joakimstolen/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/SoftDesEksamen.csproj",
+    "projectUniqueName": "C:\\Users\\bragg\\OneDrive\\Documents\\Skole\\3.semester\\Software_design\\Eksamen\\SoftDesEksamen\\SoftDesEksamen.csproj",
     "projectName": "SoftDesEksamen",
-    "projectPath": "/Users/joakimstolen/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/SoftDesEksamen.csproj",
-    "outputPath": "/Users/joakimstolen/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/obj/",
+    "projectPath": "C:\\Users\\bragg\\OneDrive\\Documents\\Skole\\3.semester\\Software_design\\Eksamen\\SoftDesEksamen\\SoftDesEksamen.csproj",
+    "outputPath": "C:\\Users\\bragg\\OneDrive\\Documents\\Skole\\3.semester\\Software_design\\Eksamen\\SoftDesEksamen\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
-      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
       "netcoreapp3.0"
     ],
     "sources": {
+      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
       "https://api.nuget.org/v3/index.json": {}
     },
     "frameworks": {
