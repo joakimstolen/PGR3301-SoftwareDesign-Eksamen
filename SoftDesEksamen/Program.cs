@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading;
 using Microsoft.VisualBasic.CompilerServices;
 
@@ -8,16 +9,9 @@ namespace SoftDesEksamen {
 		static void Main(string[] args)
 			{
 				CarShop shop = new CarShop();
+				Random random = new Random();
 
-
-				List<Customer> customers = new List<Customer>()
-				{
-					new Customer("Jon", shop),
-					new Customer("Joakim", shop),
-					new Customer("Eskild", shop),
-					new Customer("Kris", shop)
-				};
-				
+				/*
 				List<SalesMan> salesmen = new List<SalesMan>()
 				{
 					new SalesMan("Tommy", shop),
@@ -25,37 +19,61 @@ namespace SoftDesEksamen {
 					new SalesMan("Anders", shop),
 					new SalesMan("Rob", shop)
 				};
+				*/
 
+
+				List<Customer> customers = new List<Customer>()
+				{
+					new Customer("Jon"),
+					new Customer("Joakim"),
+					new Customer("Fredrik"),
+					new Customer("Eskild"),
+					new Customer("Jonathan"),
+					new Customer("Brage"),
+					new Customer("Maya"),
+					new Customer("Per"),
+				};
+				
+
+				Customer customer1 = new Customer("Jon");
+				Customer customer2 = new Customer("Joakim");
+				Customer customer3 = new Customer("Eskild");
+				Customer customer4 = new Customer("Jens");
+				
+				SalesMan salesMan1 = new SalesMan("Tommy");
+				SalesMan salesMan2 = new SalesMan("Geir");
+				SalesMan salesMan3 = new SalesMan("Andy");
+				SalesMan salesMan4 = new SalesMan("Birger");
+				
+
+				List<AssignCustomerToSalesman> customerAndSalesman = new List<AssignCustomerToSalesman>()
+				{
+					new AssignCustomerToSalesman(customer1, salesMan1, shop),
+					new AssignCustomerToSalesman(customer2, salesMan2, shop)
+				};
+
+				
 				
 				Console.WriteLine("CarShop is now open, Welcome!");
 				
+				
+				
+				
 				shop.Start();
 
-				foreach (var salesman in salesmen)
+				foreach (var assigner in customerAndSalesman)
 				{
-					salesman.Start();
+					assigner.Start();
 				}
 				
-				foreach (var customer in customers)
-				{
-					customer.Start();
-				}
-				
-				Thread.Sleep(3000);
-				
-				foreach (var salesman in salesmen)
-				{
-					salesman.Stop();
-				}
-				
-				
-				
-				Thread.Sleep(3000);
+				Thread.Sleep(4000);
 
-				foreach (var customer in customers)
+				foreach (var assigner in customerAndSalesman)
 				{
-					customer.Stop();
+					assigner.Stop();
 				}
+				
+				
 				
 				shop.Stop();
 				
