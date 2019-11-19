@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading;
@@ -9,7 +10,6 @@ namespace SoftDesEksamen {
 		static void Main(string[] args)
 			{
 				CarShop shop = new CarShop();
-				Random random = new Random();
 
 				/*
 				List<SalesMan> salesmen = new List<SalesMan>()
@@ -20,19 +20,25 @@ namespace SoftDesEksamen {
 					new SalesMan("Rob", shop)
 				};
 				*/
+				
 
-
-				List<Customer> customers = new List<Customer>()
+				List<string> customers = new List<string>()
 				{
-					new Customer("Jon"),
-					new Customer("Joakim"),
-					new Customer("Fredrik"),
-					new Customer("Eskild"),
-					new Customer("Jonathan"),
-					new Customer("Brage"),
-					new Customer("Maya"),
-					new Customer("Per"),
+					"Joakim",
+					"Jan",
+					"Brage"
 				};
+
+				
+				var random = new Random();
+				int index = random.Next(0, customers.Count);
+				Customer randomCustomer = new Customer(customers[index]);
+				Console.WriteLine(randomCustomer);
+				
+				
+				
+				
+				
 				
 
 				Customer customer1 = new Customer("Jon");
@@ -45,12 +51,13 @@ namespace SoftDesEksamen {
 				SalesMan salesMan3 = new SalesMan("Andy");
 				SalesMan salesMan4 = new SalesMan("Birger");
 				
-
+				
 				List<AssignCustomerToSalesman> customerAndSalesman = new List<AssignCustomerToSalesman>()
 				{
-					new AssignCustomerToSalesman(customer1, salesMan1, shop),
-					new AssignCustomerToSalesman(customer2, salesMan2, shop)
+					new AssignCustomerToSalesman(randomCustomer, salesMan1, shop),
+					new AssignCustomerToSalesman(randomCustomer, salesMan2, shop)
 				};
+				
 
 				
 				
@@ -60,6 +67,7 @@ namespace SoftDesEksamen {
 				
 				
 				shop.Start();
+
 
 				foreach (var assigner in customerAndSalesman)
 				{
