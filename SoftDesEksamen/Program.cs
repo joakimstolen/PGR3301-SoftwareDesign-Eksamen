@@ -12,13 +12,17 @@ namespace SoftDesEksamen {
 				{
 					new Customer("Brage"), 
 					new Customer("Joakim"), 
-					new Customer("Jon")
+					new Customer("Jon"),
+					new Customer("Bjarne"),
+					new Customer("Hans")
 				};
 				List<SalesMan> salesMen = new List<SalesMan>()
 				{
 					new SalesMan("Kristoffer"), 
 					new SalesMan("JonPus"), 
-					new SalesMan("Tangen")
+					new SalesMan("Tangen"),
+					new SalesMan("Per"),
+					new SalesMan("Tomas")
 				};
 
 
