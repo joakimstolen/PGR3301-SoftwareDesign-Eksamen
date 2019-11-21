@@ -43,8 +43,8 @@ namespace SoftDesEksamen {
 				if (_cars.Count > 0)
 				{
 					var test = _cars[0];
+					Thread.Sleep(2000);
 					_cars[0].getType();
-					Thread.Sleep(100);
 					_cars.RemoveAt(0);
 					return test;
 				}
@@ -69,8 +69,9 @@ namespace SoftDesEksamen {
 			{
 				if (_cars.Count >= 0)
 				{
+					Thread.Sleep(2000);
 					var test = CarFactory.CreateRandomCar(); 
-					Thread.Sleep(100);
+					
 					_cars.Add(test);
 					return test;
 				}

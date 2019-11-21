@@ -14,6 +14,7 @@ namespace SoftDesEksamen {
 		{
 			_name = getName();
 		}
+		
 
 		public SalesMan(string name, CarShop carShop)
 		{
@@ -26,7 +27,7 @@ namespace SoftDesEksamen {
 			{
 				ICar published = _carShop.PublishCar();
 					if (published != null) { 
-						Console.WriteLine("{0} published a {1}", _name, published.getType());
+						Console.WriteLine("{0} published a {1} for sale", _name, published.getType());
 				}
 			}
 		}
