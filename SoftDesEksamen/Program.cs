@@ -5,53 +5,64 @@ using System.Threading;
 namespace SoftDesEksamen {
 	class Program {
 		static void Main(string[] args)
-			{
-				CarShop shop = new CarShop();
-
-				List<Customer> customers = new List<Customer>()
-				{
-					new Customer("Brage"), 
-					new Customer("Joakim"), 
-					new Customer("Jon")
-				};
-				List<SalesMan> salesMen = new List<SalesMan>()
-				{
-					new SalesMan("Kristoffer"), 
-					new SalesMan("JonPus"), 
-					new SalesMan("Tangen")
-				};
-
-
-				List<AssignCustomerToSalesman> customerAndSalesman = new List<AssignCustomerToSalesman>()
-				{
-					new AssignCustomerToSalesman(customers, salesMen, shop)
-				};
-				
-				
-				Console.WriteLine("CarShop is now open, Welcome!");
-
-				shop.Start();
-
-
-				foreach (var assigner in customerAndSalesman)
-				{
-					assigner.Start();
-				}
-				
-				Thread.Sleep(4000);
-
-				foreach (var assigner in customerAndSalesman)
-				{
-					assigner.Stop();
-				}
-				
-				
-				
-				shop.Stop();
-				
-				
-				Console.WriteLine("\n\n Press any key to Exit");
-				Console.ReadKey();
-			}
+		{
+			carshop(out var shop, out var customers, out var salesMen, out var customerAndSalesman);
+			AssignCustomerToSalesman acts = new AssignCustomerToSalesman(carshop(customers), carshop(shop), );
 		}
+
+		private static void carshop(out CarShop shop, out List<Customer> customers, out List<SalesMan> salesMen, out List<AssignCustomerToSalesman> customerAndSalesman)
+		{
+			shop = new CarShop();
+			customers = new List<Customer>()
+			{
+				new Customer("Brage"),
+				new Customer("Joakim"),
+				new Customer("Jon")
+			};
+			salesMen = new List<SalesMan>()
+			{
+				new SalesMan("Kristoffer"),
+				new SalesMan("JonPus"),
+				new SalesMan("Tangen")
+			};
+
+
+			customerAndSalesman = new List<AssignCustomerToSalesman>()
+			{
+				new AssignCustomerToSalesman(customers, salesMen, shop)
+			};
+
+			Thread t1 = new Thread(new ThreadStart(customerAndSalesman.Task));
+			Thread t2 = new Thread(new ThreadStart(shop.Task2));
+			Thread t3 = new Thread(new ThreadStart(shop.Task2));
+
+			Console.WriteLine("CarShop is now open, Welcome!");
+			
+			t1.Start();
+			t2.Start();
+			t3.Start();
+			
+			foreach (var assigner in customerAndSalesman)
+			{
+				assigner.Start();
+			}
+
+			for (int i = 0; i < 10; i++)
+			{
+			}
+
+
+			Thread.Sleep(2000);
+
+
+			foreach (var assigner in customerAndSalesman)
+			{
+				assigner.Stop();
+			}
+
+
+			Console.WriteLine("\n\n Press any key to Exit");
+			Console.ReadKey();
+		}
+	}
 	}

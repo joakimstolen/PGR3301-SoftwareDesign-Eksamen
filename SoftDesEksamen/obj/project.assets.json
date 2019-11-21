@@ -8,30 +8,28 @@
     ".NETCoreApp,Version=v3.0": []
   },
   "packageFolders": {
-    "C:\\Users\\bragg\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/jon/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bragg\\OneDrive\\Documents\\Skole\\3.semester\\Software_design\\Eksamen\\SoftDesEksamen\\SoftDesEksamen.csproj",
+      "projectUniqueName": "/Users/jon/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/SoftDesEksamen.csproj",
       "projectName": "SoftDesEksamen",
-      "projectPath": "C:\\Users\\bragg\\OneDrive\\Documents\\Skole\\3.semester\\Software_design\\Eksamen\\SoftDesEksamen\\SoftDesEksamen.csproj",
-      "packagesPath": "C:\\Users\\bragg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bragg\\OneDrive\\Documents\\Skole\\3.semester\\Software_design\\Eksamen\\SoftDesEksamen\\obj\\",
+      "projectPath": "/Users/jon/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/SoftDesEksamen.csproj",
+      "packagesPath": "/Users/jon/.nuget/packages/",
+      "outputPath": "/Users/jon/RiderProjects/PGR3301-SoftwareDesign-Eksamen/SoftDesEksamen/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\bragg\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/jon/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
