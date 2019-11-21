@@ -22,15 +22,12 @@
 			{
 			return _originalCar.getHorsePower();
 			}
-
-		public virtual int getSeats()
-			{
-			return _originalCar.getSeats();
-			}
+		
 
 		public virtual string getType()
 		{
 			return _originalCar.getType();
 		}
+		
 	}
 	}

@@ -21,11 +21,18 @@ namespace SoftDesEksamen {
 			random = new Random();
 		}
 
-		protected override void Task()
+		public override void Task()
 		{
 			Thread.Sleep(random.Next(50, 400));
-			MakeCar();
+			PublishCar();
 		}
+
+		public override void Task2()
+		{
+			Thread.Sleep(random.Next(50, 400));
+			BuyCar();
+		}
+		
 
 		public ICar BuyCar()
 		{
@@ -33,9 +40,11 @@ namespace SoftDesEksamen {
 			{
 				if (_cars.Count > 0)
 				{
-					ICar carsToSell = _cars[0];
+					var test = _cars[0];
+					Thread.Sleep(2000);
+					_cars[0].getType();
 					_cars.RemoveAt(0);
-					return carsToSell;
+					return test;
 				}
 				else
 				{
@@ -43,24 +52,18 @@ namespace SoftDesEksamen {
 				}
 			}
 		}
-
-		void MakeCar()
-		{
-			lock (_lock)
-			{
-				_cars.Add(CarFactory.CreateRandomCar());
-			}
-		}
+		
 
 		public ICar PublishCar()
 		{
 			lock (_lock)
 			{
-				if (_cars.Count > 0)
+				if (_cars.Count >= 0)
 				{
-					ICar carsToSell = _cars[0];
-					_cars.RemoveAt(0);
-					return carsToSell;
+					Thread.Sleep(2000);
+					var test = CarFactory.CreateRandomCar();
+					_cars.Add(test);
+					return test;
 				}
 				else
 				{
