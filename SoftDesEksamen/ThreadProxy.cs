@@ -6,22 +6,9 @@ namespace SoftDesEksamen
     public abstract class ThreadProxy
     {
 
-        protected Thread _thread;
-        protected bool _running;
+        protected Thread _thread { get; set; }
+        protected bool _running { get; set; }
 
-        public Thread Thread
-        {
-            get => _thread;
-        }
-        public bool isAlive
-        {
-            get => _thread.IsAlive;
-        }
-
-        public bool Running
-        {
-            get => _running; 
-        }
 
         public ThreadProxy()
         {

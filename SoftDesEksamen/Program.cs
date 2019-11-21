@@ -46,11 +46,14 @@ namespace SoftDesEksamen {
 				{
 					salesman.Start();
 					
+				}
+
+				foreach (var customer in customers)
+				{
+					
+					customer.Start();
 
 				}
-				Thread.Sleep(5000);
-				
-				
 				
 				foreach (var salesman in salesMen)
 				{
@@ -59,12 +62,6 @@ namespace SoftDesEksamen {
 				
 				Console.WriteLine("\t\t\t\t\t\t<---------------Some customers are interested...--------------->");
 				
-				foreach (var customer in customers)
-				{
-					
-					customer.Start();
-
-				}
 
 				foreach (var customer in customers) 
 				{ 
@@ -72,12 +69,6 @@ namespace SoftDesEksamen {
 					customer.Stop();
 				}
 				
-				
-
-				
-
-
-
 
 				shop.Stop();
 				Console.WriteLine("\t\t\t\t\t\t<---------------Store is closed--------------->");

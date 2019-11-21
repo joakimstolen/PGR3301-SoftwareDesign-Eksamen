@@ -6,7 +6,6 @@ namespace SoftDesEksamen {
 	public class CarShop : ThreadProxy
 	{
 		private List<ICar> _cars;
-		private List<SalesMan> _salesMen;
 		Random random;
 
 		private readonly object _lock = new Object();
@@ -19,7 +18,6 @@ namespace SoftDesEksamen {
 		public CarShop()
 		{
 			_cars = new List<ICar>();
-			_salesMen = new List<SalesMan>();
 			random = new Random();
 		}
 
@@ -54,14 +52,7 @@ namespace SoftDesEksamen {
 				}
 			}
 		}
-
-		void MakeCar()
-		{
-			lock (_lock)
-			{
-				_cars.Add(CarFactory.CreateRandomCar());
-			}
-		}
+		
 
 		public ICar PublishCar()
 		{
@@ -70,8 +61,7 @@ namespace SoftDesEksamen {
 				if (_cars.Count >= 0)
 				{
 					Thread.Sleep(2000);
-					var test = CarFactory.CreateRandomCar(); 
-					
+					var test = CarFactory.CreateRandomCar();
 					_cars.Add(test);
 					return test;
 				}

@@ -17,11 +17,7 @@ namespace SoftDesEksamen {
 			{
 			return "Red";
 			}
-
-		public override int getSeats()
-			{
-			return base.getSeats() - 3;
-			}
+		
 
 		public override int getHorsePower()
 			{
