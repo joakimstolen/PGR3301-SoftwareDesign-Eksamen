@@ -29,13 +29,17 @@ namespace SoftDesEksamen
             _running = false; 
         }
 
-        protected abstract void Task();
+        public abstract void Task();
 
+        public abstract void Task2();
+
+ 
         protected void ThreadLoop()
         {
             while (_running)
             {
                 Task();
+                Task2();
             }
         }
 

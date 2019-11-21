@@ -1,57 +1,82 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 
 namespace SoftDesEksamen {
 	class Program {
+		
+		
 		static void Main(string[] args)
 			{
 				CarShop shop = new CarShop();
+				Random random = new Random();
+
 
 				List<Customer> customers = new List<Customer>()
 				{
-					new Customer("Brage"), 
-					new Customer("Joakim"), 
-					new Customer("Jon"),
-					new Customer("Bjarne"),
-					new Customer("Hans")
+					new Customer("Brage", shop), 
+					new Customer("Joakim", shop), 
+					new Customer("Jon", shop),
+					new Customer("Bjarne", shop),
+					new Customer("Hans", shop)
 				};
+				
 				List<SalesMan> salesMen = new List<SalesMan>()
 				{
-					new SalesMan("Kristoffer"), 
-					new SalesMan("JonPus"), 
-					new SalesMan("Tangen"),
-					new SalesMan("Per"),
-					new SalesMan("Tomas")
+					new SalesMan("Kristoffer", shop), 
+					new SalesMan("JonPus", shop), 
+					new SalesMan("Tangen", shop),
+					new SalesMan("Per", shop),
+					new SalesMan("Tomas", shop)
 				};
-
-
-				List<AssignCustomerToSalesman> customerAndSalesman = new List<AssignCustomerToSalesman>()
-				{
-					new AssignCustomerToSalesman(customers, salesMen, shop)
-				};
+				
 				
 				
 				Console.WriteLine("CarShop is now open, Welcome!");
 
 				shop.Start();
 
+				Console.WriteLine("<---------------Thread Started--------------->");
 
-				foreach (var assigner in customerAndSalesman)
+				
+				
+				
+				foreach (var salesman in salesMen) 
 				{
-					assigner.Start();
+					salesman.Start();
+
 				}
 				
-				Thread.Sleep(4000);
-
-				foreach (var assigner in customerAndSalesman)
+				
+				foreach (var salesman in salesMen)
 				{
-					assigner.Stop();
+					salesman.Stop();
+				}
+				
+				foreach (var customer in customers)
+				{
+					
+					customer.Start();
+
+				}
+				
+
+				foreach (var customer in customers) 
+				{ 
+					
+					customer.Stop();
 				}
 				
 				
+
 				
+
+
+
+
 				shop.Stop();
+				Console.WriteLine("<---------------Thread ended--------------->");
 				
 				
 				Console.WriteLine("\n\n Press any key to Exit");
