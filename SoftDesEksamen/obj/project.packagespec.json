@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\bragg\\OneDrive\\Documents\\Skole\\3.semester\\Software_design\\Eksamen\\SoftDesEksamen\\SoftDesEksamen.csproj",
+    "projectUniqueName": "C:\\Users\\bragg\\OneDrive\\Documents\\Skole\\3.semester\\Software_design\\PGR3301-SoftwareDesign-Eksamen\\SoftDesEksamen\\SoftDesEksamen.csproj",
     "projectName": "SoftDesEksamen",
-    "projectPath": "C:\\Users\\bragg\\OneDrive\\Documents\\Skole\\3.semester\\Software_design\\Eksamen\\SoftDesEksamen\\SoftDesEksamen.csproj",
-    "outputPath": "C:\\Users\\bragg\\OneDrive\\Documents\\Skole\\3.semester\\Software_design\\Eksamen\\SoftDesEksamen\\obj\\",
+    "projectPath": "C:\\Users\\bragg\\OneDrive\\Documents\\Skole\\3.semester\\Software_design\\PGR3301-SoftwareDesign-Eksamen\\SoftDesEksamen\\SoftDesEksamen.csproj",
+    "outputPath": "C:\\Users\\bragg\\OneDrive\\Documents\\Skole\\3.semester\\Software_design\\PGR3301-SoftwareDesign-Eksamen\\SoftDesEksamen\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
